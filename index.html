@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ThantWaiYanLinn - Junior Backend Developer Portfolio">
+    <meta name="keywords" content="backend developer, portfolio, ThantWaiYanLinn, programming, ICT">
+    <title>ThantWaiYanLinn - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">ThantWaiYanLinn</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-section="home">Home</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#projects" data-section="projects">Projects</a></li>
+            <li><a href="#skills" data-section="skills">Skills</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="hero-content">
+            <h1 class="hero-title"><span class="letter">H</span><span class="letter">e</span><span class="letter">l</span><span class="letter">l</span><span class="letter">o</span><span class="letter">,</span><span class="letter"> </span><span class="letter">I</span><span class="letter">'</span><span class="letter">m</span><span class="letter"> </span><span class="letter">T</span><span class="letter">h</span><span class="letter">a</span><span class="letter">n</span><span class="letter">t</span><span class="letter">W</span><span class="letter">a</span><span class="letter">i</span><span class="letter">Y</span><span class="letter">a</span><span class="letter">n</span><span class="letter">L</span><span class="letter">i</span><span class="letter">n</span><span class="letter">n</span></h1>
+            <p class="hero-subtitle"><span class="letter">J</span><span class="letter">u</span><span class="letter">n</span><span class="letter">i</span><span class="letter">o</span><span class="letter">r</span><span class="letter"> </span><span class="letter">B</span><span class="letter">a</span><span class="letter">c</span><span class="letter">k</span><span class="letter">e</span><span class="letter">n</span><span class="letter">d</span><span class="letter"> </span><span class="letter">D</span><span class="letter">e</span><span class="letter">v</span><span class="letter">e</span><span class="letter">l</span><span class="letter">o</span><span class="letter">p</span><span class="letter">e</span><span class="letter">r</span><span class="letter"> </span><span class="letter">|</span><span class="letter"> </span><span class="letter">I</span><span class="letter">C</span><span class="letter">T</span><span class="letter"> </span><span class="letter">I</span><span class="letter">n</span><span class="letter">t</span><span class="letter">e</span><span class="letter">r</span><span class="letter">n</span><span class="letter">s</span><span class="letter">h</span><span class="letter">i</span><span class="letter">p</span></p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+            <img src="assets/images/Profile.jpg" alt="Profile Picture" class="profile-img">
+            <div class="about-text">
+                <p>Final-year ICT student with hands-on experience in Python programming and currently learning JSON and Django for web development. Gained basic understanding of databases through coursework and projects. Eager to apply practical skills in a real-world internship, with a strong interest in web development and problem-solving.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-carousel">
+            <div class="project-card">
+                <img src="assets/images/project1.jpg" alt="Project 1">
+                <h3>🌐 Full-Stack CRUD Web App</h3>
+                <p>ASP.NET Core, C#, SQL
+                    <div>Built a full-stack web app with CRUD features</div>
+                </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/project2.jpg" alt="Project 2">
+                <h3>🧠 FAQ Chatbot System</h3>
+                <p>Python, HTML/CSS
+                    <div>Developed a chatbot to answer student FAQs</div>
+                </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/project1.jpg" alt="Project 3">
+                <h3>🎮 Unity 3D Game Kit Project</h3>
+                <p>Unity, C#
+                    <div>Designed and programmed a small action-adventure game</div>
+                </p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="90">Python</div>
+            <div class="skill-item" data-skill="90">HTML</div>
+            <div class="skill-item" data-skill="85">CSS</div>
+            <div class="skill-item" data-skill="80">ASP.NET Core</div>
+            <div class="skill-item" data-skill="75">Unity</div>
+            <div class="skill-item" data-skill="70">Git & GitHub</div>
+            <div class="skill-item" data-skill="80">JSON</div>
+            <div class="skill-item" data-skill="80">Django (Basic)</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-text">Interested in collaborating? Let's connect!</p>
+        <div class="contact-links">
+            <a href="mailto:twaiyy27@gmail.com" class="contact-link">📧 Email</a>
+            <a href="https://linkedin.com/in/thantwai-yanlinn-4b066b372" class="contact-link">🔗 LinkedIn</a>
+            <a href="https://github.com/Thantwyl" class="contact-link">🐱 GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ThantWaiYanLinn. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
