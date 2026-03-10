@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.25);
+}
+
+.section-padding {
+  @apply px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24;
+}
+
+.container-width {
+  @apply max-w-7xl mx-auto;
+}
+
+.nav-link {
+  @apply text-sm md:text-base font-medium transition duration-300 hover:opacity-80;
+}
+
+.primary-btn {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm md:text-base font-semibold transition duration-300;
+}
+
+.card-style {
+  @apply rounded-2xl border backdrop-blur-md shadow-lg transition duration-300;
+}
