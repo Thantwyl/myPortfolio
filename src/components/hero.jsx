@@ -101,7 +101,7 @@ const Hero = ({ darkMode }) => {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="flex justify-center"
+            className="flex justify-center md:justify-end"
           >
             <div
               className={`relative w-[280px] sm:w-[340px] md:w-[380px] rounded-[2rem] border p-3 shadow-2xl ${

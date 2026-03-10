@@ -12,11 +12,10 @@ const Footer = ({ darkMode }) => {
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h3 className="text-xl font-bold">
-              {personalInfo.name}
-              <span className="text-blue-500">.</span>
+              Thantwyl <span className="text-blue-500">Dev.</span>
             </h3>
             <p className={`mt-2 text-sm ${darkMode ? "text-slate-400" : "text-slate-600"}`}>
-              Built with React and Tailwind CSS.
+              Learning, building, and improving every day.
             </p>
           </div>
 

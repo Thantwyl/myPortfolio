@@ -24,7 +24,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="container-width section-padding">
         <div className="flex items-center justify-between py-4">
           <a href="#home" className="text-xl font-bold tracking-wide">
-            Thantwyl<span className="text-blue-500">.</span>
+            Thantwyl <span className="text-blue-500">Dev.</span>
           </a>
 
           {/* Desktop Nav */}

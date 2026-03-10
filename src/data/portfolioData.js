@@ -8,11 +8,11 @@ export const personalInfo = {
   title: "Backend Developer | Aspiring AI Engineer | Data Science Enthusiast",
   shortBio:
     "I build modern web applications and enjoy working on backend systems, AI-focused solutions, and data-driven projects.",
-  email: "your.email@example.com",
-  phone: "+95 9xxxxxxxxx",
-  location: "Myanmar",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  email: "twaiyy27@gmail.com",
+  phone: "+66 967655893",
+  location: "Bangkok, Thailand",
+  github: "https://github.com/Thantwyl",
+  linkedin: "https://www.linkedin.com/in/thantwyl/",
 };
 
 export const aboutInfo = {
@@ -77,27 +77,9 @@ export const skillsData = [
   },
 ];
 
-export const projectsData = [
+export const projectsData = [ 
   {
     id: 1,
-    title: "Concert Ticket Ordering System",
-    image: project1,
-    description:
-      "A concert ticket ordering platform with backend features for ordering flow, authentication, admin management, and deployment support.",
-    role: "Freelance Backend Developer",
-    experience:
-      "Built backend functionality for a concert ticket ordering platform. Implemented admin CRUD operations, user sign up/sign in, authentication, database integration, CSV export, Cloudinary image storage, and deployment support on Render.",
-    tech: [
-      { name: "Django", iconKey: "django" },
-      { name: "PostgreSQL", iconKey: "postgresql" },
-      { name: "Render", iconKey: "render" },
-      { name: "Cloudinary", iconKey: "cloud" },
-    ],
-    github: "https://github.com/yourusername/concert-ticket-system",
-    live: "https://your-concert-project.com",
-  },
-  {
-    id: 2,
     title: "Civil Master Solution Web Application",
     image: project2,
     description:
@@ -111,8 +93,26 @@ export const projectsData = [
       { name: "Render", iconKey: "render" },
       { name: "PostgreSQL", iconKey: "postgresql" },
     ],
-    github: "https://github.com/yourusername/civil-master-backend",
-    live: "https://your-civilmaster-app.com",
+    github: "https://github.com/Thantwyl/Tickets-Anywhere-Backend",
+    live: "https://www.civilmastersolution.com",
+  },
+  {
+    id: 2,
+    title: "Concert Ticket Ordering System",
+    image: project1,
+    description:
+      "A concert ticket ordering platform with backend features for ordering flow, authentication, admin management, and deployment support.",
+    role: "Freelance Backend Developer",
+    experience:
+      "Built backend functionality for a concert ticket ordering platform. Implemented admin CRUD operations, user sign up/sign in, authentication, database integration, CSV export, Cloudinary image storage, and deployment support on Render.",
+    tech: [
+      { name: "Django", iconKey: "django" },
+      { name: "PostgreSQL", iconKey: "postgresql" },
+      { name: "Render", iconKey: "render" },
+      { name: "Cloudinary", iconKey: "cloud" },
+    ],
+    github: "https://github.com/Thantwyl/Tickets-Anywhere-Backend",
+    live: "https://your-concert-project.com",
   },
   {
     id: 3,
@@ -134,7 +134,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "Civil Master Solution Company Website",
+    title: "Civil Master Solution / Ductil  ",
     image: project4,
     description:
       "A responsive product showcase and advertisement website built for a company project.",
@@ -147,7 +147,7 @@ export const projectsData = [
       { name: "JavaScript", iconKey: "javascript" },
       { name: "Vercel", iconKey: "vercel" },
     ],
-    github: "https://github.com/yourusername/civil-master-website",
-    live: "https://your-company-website.com",
+    github: "https://github.com/civilmastersolution-CMS/Ductil_dev",
+    live: "https://ductil-dev.vercel.app/",
   },
 ];
