@@ -1,7 +1,7 @@
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
+import project1 from "../assets/cms.png";
+import project2 from "../assets/ticket anywhere.jpg";
 import project3 from "../assets/project3.jpg";
-import project4 from "../assets/project4.jpg";
+import project4 from "../assets/ductil.png";
 
 export const personalInfo = {
   name: "ThantWaiYan Linn",
@@ -81,7 +81,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Civil Master Solution Web Application",
-    image: project2,
+    image: project1,
     description:
       "A production web application built for a real company project with backend development and deployment support.",
     role: "Backend Developer Intern",
@@ -93,13 +93,13 @@ export const projectsData = [
       { name: "Render", iconKey: "render" },
       { name: "PostgreSQL", iconKey: "postgresql" },
     ],
-    github: "https://github.com/Thantwyl/Tickets-Anywhere-Backend",
+    github: "https://github.com/Thantwyl/cms_final_backend",
     live: "https://www.civilmastersolution.com",
   },
   {
     id: 2,
     title: "Concert Ticket Ordering System",
-    image: project1,
+    image: project2,
     description:
       "A concert ticket ordering platform with backend features for ordering flow, authentication, admin management, and deployment support.",
     role: "Freelance Backend Developer",
@@ -112,7 +112,7 @@ export const projectsData = [
       { name: "Cloudinary", iconKey: "cloud" },
     ],
     github: "https://github.com/Thantwyl/Tickets-Anywhere-Backend",
-    live: "https://your-concert-project.com",
+    live: "https://ticketany-frontend-pi.vercel.app/",
   },
   {
     id: 3,

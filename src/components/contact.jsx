@@ -1,6 +1,20 @@
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+  FaCheckCircle,
+} from "react-icons/fa";
 import { personalInfo } from "../data/portfolioData";
+
+const reasons = [
+  "Delivers reliable and high-quality backend solutions",
+  "Hands-on experience in real-world web application projects",
+  "Supports smooth teamwork with communication and integration",
+  "Driven to grow in backend development, AI, and automation",
+];
 
 const Contact = ({ darkMode }) => {
   return (
@@ -15,6 +29,7 @@ const Contact = ({ darkMode }) => {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-500">
             Contact
           </p>
+
           <h2 className="mb-10 text-3xl font-bold sm:text-4xl">
             Get In Touch
           </h2>
@@ -23,18 +38,23 @@ const Contact = ({ darkMode }) => {
             <div
               className={`card-style p-6 sm:p-8 ${
                 darkMode
-                  ? "border-white/10 bg-white/5"
+                  ? "border-white/10 bg-white/10 backdrop-blur-md"
                   : "border-slate-200 bg-slate-50"
               }`}
             >
               <h3 className="mb-6 text-2xl font-semibold">Contact Info</h3>
 
-              <div className="space-y-5">
+              {/* Email + Phone */}
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div className="flex items-start gap-4">
                   <FaEnvelope className="mt-1 text-blue-500" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className={darkMode ? "text-slate-300" : "text-slate-600"}>
+                    <p
+                      className={
+                        darkMode ? "text-slate-300" : "text-slate-600"
+                      }
+                    >
                       {personalInfo.email}
                     </p>
                   </div>
@@ -44,56 +64,96 @@ const Contact = ({ darkMode }) => {
                   <FaPhoneAlt className="mt-1 text-blue-500" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className={darkMode ? "text-slate-300" : "text-slate-600"}>
+                    <p
+                      className={
+                        darkMode ? "text-slate-300" : "text-slate-600"
+                      }
+                    >
                       {personalInfo.phone}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <FaMapMarkerAlt className="mt-1 text-blue-500" />
-                  <div>
-                    <p className="font-semibold">Location</p>
-                    <p className={darkMode ? "text-slate-300" : "text-slate-600"}>
-                      {personalInfo.location}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-8 flex gap-4">
-                <a
-                  href={personalInfo.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`rounded-xl p-3 transition ${
-                    darkMode
-                      ? "bg-white/10 hover:bg-white/20"
-                      : "bg-white border border-slate-200 hover:bg-slate-100"
-                  }`}
-                >
-                  <FaGithub size={20} />
-                </a>
+              {/* Location + Social Icons */}
+              <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div className="flex items-start gap-4">
+                  <FaMapMarkerAlt className="mt-1 text-blue-500" />
+                  <div>
+                    <p className="font-semibold">Location</p>
+                    <p
+                      className={
+                        darkMode ? "text-slate-300" : "text-slate-600"
+                      }
+                    >
+                      {personalInfo.location}
+                    </p>
+                  </div>
+                </div>
 
-                <a
-                  href={personalInfo.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`rounded-xl p-3 transition ${
-                    darkMode
-                      ? "bg-white/10 hover:bg-white/20"
-                      : "bg-white border border-slate-200 hover:bg-slate-100"
-                  }`}
-                >
-                  <FaLinkedin size={20} />
-                </a>
+                <div className="flex items-start gap-4">
+                  <div className="w-[12px] shrink-0" />
+                  <div className="flex gap-4">
+                    <a
+                      href={personalInfo.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`rounded-xl p-3 transition ${
+                        darkMode
+                          ? "bg-white/10 hover:bg-white/20"
+                          : "bg-white border border-slate-200 hover:bg-slate-100"
+                      }`}
+                    >
+                      <FaGithub size={20} />
+                    </a>
+
+                    <a
+                      href={personalInfo.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`rounded-xl p-3 transition ${
+                        darkMode
+                          ? "bg-white/10 hover:bg-white/20"
+                          : "bg-white border border-slate-200 hover:bg-slate-100"
+                      }`}
+                    >
+                      <FaLinkedin size={20} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Why Work With Me */}
+              <div
+                className={`mt-8 rounded-2xl p-5 sm:p-6 ${
+                  darkMode
+                    ? "border border-white/10 bg-white/8"
+                    : "border border-slate-200 bg-slate-100"
+                }`}
+              >
+                <h4 className="mb-5 text-xl font-semibold">Why Work With Me?</h4>
+
+                <div className="space-y-4">
+                  {reasons.map((reason, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <FaCheckCircle className="mt-1 shrink-0 text-blue-500" />
+                      <p
+                        className={
+                          darkMode ? "text-slate-300" : "text-slate-700"
+                        }
+                      >
+                        {reason}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
             <div
               className={`card-style p-6 sm:p-8 ${
                 darkMode
-                  ? "border-white/10 bg-white/5"
+                  ? "border-white/10 bg-white/10 backdrop-blur-md"
                   : "border-slate-200 bg-slate-50"
               }`}
             >

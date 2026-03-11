@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { personalInfo } from "../data/portfolioData";
-import profileImg from "../assets/profile.png";
+import profileImg from "../assets/profile-1.png";
 import resumePdf from "../assets/resume.pdf";
 
 const Hero = ({ darkMode }) => {

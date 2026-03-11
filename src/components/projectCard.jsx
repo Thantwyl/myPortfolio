@@ -50,6 +50,7 @@ const ProjectCard = ({ project, darkMode }) => {
       <img
         src={project.image}
         alt={project.title}
+        loading="lazy"
         className="h-56 w-full object-cover"
       />
 
