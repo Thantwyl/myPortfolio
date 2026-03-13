@@ -24,8 +24,8 @@ export const aboutInfo = {
     {
       degree: "Bachelor of Information and Communication Technology (ICT)",
       school: "Rangsit University, Thailand",
-      year: "2023 - 2025",
-      GPA: "GPA : 3.68 / 4.00",
+      year: "2023 - 2026",
+      GPA: "GPA : 3.68 / 4.00 (First Class Honors)",
       detail:
         "Focused on software development, databases, web technologies, and problem solving.",
     },
