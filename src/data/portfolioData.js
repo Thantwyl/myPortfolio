@@ -112,7 +112,7 @@ export const projectsData = [
       { name: "Cloudinary", iconKey: "cloud" },
     ],
     github: "https://github.com/Thantwyl/Tickets-Anywhere-Backend",
-    live: "https://ticketany-frontend-pi.vercel.app/",
+    live: "https://ticketsany.com/",
   },
   {
     id: 3,
